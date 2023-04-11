@@ -1,10 +1,15 @@
-.pokeSplash {
+/*.pokeSplash {*/
+/*    background-color: rgba(0, 62, 244, 0.24);*/
+/*    aspect-ratio: 16 / 9;*/
+/*}*/
+
+.pokeSplashContainer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.pokeSplashContainer {
+.pokeSplashTextAndButton {
     width: 500px;
     height: 250px;
     margin-top: 200px;
@@ -19,6 +24,7 @@
     font-weight: 700;
     margin: 30px 10px 10px 10px;
     text-align: center;
+    text-shadow: -1px -1px 0 #0b0606, 1px -1px 0 #433a3a, -1px 1px 0 #514747, 1px 2px 0 #d7a820;
 }
 
 .textEmphasis {
@@ -38,6 +44,8 @@
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
 }
 
 .pokeSplashButton:hover {background-color: #000000
@@ -47,4 +55,13 @@
     background-color: #000000;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+.piplup {
+    background: url("./assets/piplup.png");
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    z-index: 10;
 }

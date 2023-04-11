@@ -2,7 +2,7 @@ import './PokeTitle.css'
 
 const PokeTitle = () => {
     return (
-        <h1 className="pokeTitle">Pokégram</h1>
+        <h1 className="pokeTitle"><span className="pokeTitleP">p</span>okéram</h1>
     )
 }
 

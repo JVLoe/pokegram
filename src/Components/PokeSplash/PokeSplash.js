@@ -4,13 +4,15 @@ import Navbar from "../Narbar/Navbar";
 
 const PokeSplash = () => {
     return (
-        <div >
+        <div className="pokeSplash">
             <Navbar />
-            <div className="pokeSplash">
-                <div className="pokeSplashContainer">
+            <div className="pokeSplashContainer">
+                <div className="piplup">
+                </div>
+                <div className="pokeSplashTextAndButton">
                     <p className="pokeSplashText">Pokégram is a safe place for <span className="textEmphasis">all</span> Pokémon. <span className="textEmphasis">No trainers allowed.</span></p>
                     <button className="pokeSplashButton">
-                        Please Enter
+                        Enter
                     </button>
                 </div>
             </div>
