@@ -1,16 +1,16 @@
 .pokeTitle {
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 3em;
     margin-left: 20px;
     position: relative;
-    top: -20px;
+    top: -25px;
     color: #fdca04;
     text-shadow: -2px -2px 0 #385ba8, 2px -1px 0 #123872, -1px 2px 0 #11356d, -5px -2px 0 #0b26b9;
     letter-spacing: -1px;
 }
 
 .pokeTitleP {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 
