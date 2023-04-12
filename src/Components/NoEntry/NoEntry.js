@@ -14,7 +14,7 @@ const NoEntry = () => {
         <div className="noEntry">
             <div className="noEntryText">
                 <p>No Entry!</p>
-                <p>Pokégram is a restricted area for Pokémon only!. Click <a className="trainergramLink" onClick={handleClickTrainergram}>here</a> to enter Trainergram.</p>
+                <p>Pokégram is a restricted area for Pokémon only! Click <a className="trainergramLink" onClick={handleClickTrainergram}>here</a> to enter Trainergram.</p>
             </div>
             <button type="button"  onClick={handleClickReset} className="noEntryButton">Reset</button>
             <div className="noEntryImageContainer">
