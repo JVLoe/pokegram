@@ -9,7 +9,7 @@ const PokeDirection = ({handleAuthentication}) => {
 
     return (
         <div className="pokeDirectionContainer">
-            <p className="pokeDirectionText">Are you a Pokemon?</p>
+            <p className="pokeDirectionText">Are you a Pokémon?</p>
             <button className="pokeDirectionButton yes">Yes</button>
             <button type="button" onClick={handleClickNo} className="pokeDirectionButton no">No</button>
         </div>
