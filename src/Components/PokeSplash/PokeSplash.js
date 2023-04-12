@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom";
 const PokeSplash = () => {
     const navigate = useNavigate();
     const handleClick = () => navigate('/direction');
-
+    
     return (
         <div className="pokeSplash">
             <Navbar />
