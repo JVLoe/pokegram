@@ -1,0 +1,45 @@
+.pokeDirectionContainer {
+    background: #0b0606;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pokeDirectionText {
+    color: #fa0505;
+    font-size: 5rem;
+}
+
+.pokeDirectionButton {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fb0000;
+    background-color: #fbfbfb;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+}
+
+.pokeDirectionButton:hover {
+    background-color: #e3d3d3
+}
+
+.pokeDirectionButton:active {
+    background-color: #e3d3d3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.yes {
+    margin-right: 50px;
+}
+
+.no {
+    margin-left: 50px;
+}
