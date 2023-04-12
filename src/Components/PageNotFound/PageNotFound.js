@@ -1,9 +1,8 @@
 import './PageNotFound.css'
 import {useNavigate} from "react-router-dom";
-const PageNotFound = ({ handleAuthentication }) => {
+const PageNotFound = () => {
     const navigate = useNavigate();
     const handleClick = () => {
-        handleAuthentication();
         navigate('/');
     }
 

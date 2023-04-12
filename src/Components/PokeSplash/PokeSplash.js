@@ -13,8 +13,8 @@ const PokeSplash = ({handleAuthentication}) => {
         <div className="pokeSplash">
             <Navbar/>
             <div className="pokeSplashContainer">
-                <div className="piplup">
-                </div>
+                <div className="piplup"></div>
+                <div className="wartortle"></div>
                 <div className="pokeSplashTextAndButton">
                     <p className="pokeSplashText">Pokégram is a safe place for <span
                         className="textEmphasis">all</span> Pokémon. <span
