@@ -22,7 +22,7 @@ const App = () => {
                     ) : (
                         <Route path="/direction" element={<Navigate to="/404" />} />
                     )}
-                    <Route path="/404" element={<PageNotFound />} />
+                    <Route path="/404" element={<PageNotFound handleAuthentication={handleAuthentication}/>} />
                 </Routes>
             </BrowserRouter>
         </div>
