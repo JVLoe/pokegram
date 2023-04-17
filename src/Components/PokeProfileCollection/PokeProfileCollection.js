@@ -1,6 +1,8 @@
-import './PokeProfileCollection.css';
+import './PokeProfileCollection.scss';
 import Navbar from "../Narbar/Navbar";
 import {useEffect, useState} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronLeft, faChevronRight, faMagnifyingGlass, faRotateLeft} from "@fortawesome/free-solid-svg-icons";
 
 const PokeProfileCollection = () => {
     const [pokemons, setPokemons] = useState([]);
@@ -26,6 +28,11 @@ const PokeProfileCollection = () => {
         setOffset(Math.max(0, offset - 6));
     };
 
+    const handleReset = () => {
+        setOffset(0);
+        setSearchPokemon("");
+    }
+
     const handleSearch = (event) => {
         setSearchPokemon(event.target.value);
     };
@@ -40,7 +47,9 @@ const PokeProfileCollection = () => {
             <div className="pokeProfileCollectionContainer">
 
                 <div className="searchContainer">
-                    <button className="btn-search"></button>
+                    <button className="btn-search">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" style={{color: "#0b26b9",}} />
+                    </button>
                     <input
                         className="searchInput"
                         type="text"
@@ -48,6 +57,12 @@ const PokeProfileCollection = () => {
                         value={searchPokemon}
                         onChange={handleSearch}
                     />
+                </div>
+
+                <div className="resetPokemonButton">
+                    <button onClick={handleReset} disabled={offset === 0}>
+                        <FontAwesomeIcon icon={faRotateLeft} style={{color: "#0b26b9",}} />
+                    </button>
                 </div>
 
                 <div className="pokeCardContainer">
@@ -59,16 +74,16 @@ const PokeProfileCollection = () => {
                                     .slice(-2, -1)}.png`}
                                 alt={pokemon.name}
                             />
-                            <p>{pokemon.name}</p>
+                            <p className="avatarName">{pokemon.name}</p>
                         </div>
                     ))}
                 </div>
                 <div className="navigationButtons">
                     <button onClick={handleBack} disabled={offset === 0}>
-                        Back
+                        <FontAwesomeIcon icon={faChevronLeft} style={{color: "#0b26b9",}} />
                     </button>
                     <button onClick={handleNext} disabled={offset >= 99994}>
-                        Next
+                        <FontAwesomeIcon icon={faChevronRight} style={{color: "#0b26b9",}} />
                     </button>
                 </div>
             </div>
