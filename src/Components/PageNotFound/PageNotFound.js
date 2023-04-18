@@ -17,3 +17,8 @@ const PageNotFound = () => {
 }
 
 export default PageNotFound
+
+/**
+ * TODO:
+ * - style this like the wireframe, with images
+ * */

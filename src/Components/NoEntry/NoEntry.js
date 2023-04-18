@@ -25,3 +25,8 @@ const NoEntry = () => {
 }
 
 export default NoEntry
+
+/**
+ * TODO:
+ * - style this like the wireframe, with image
+ * */

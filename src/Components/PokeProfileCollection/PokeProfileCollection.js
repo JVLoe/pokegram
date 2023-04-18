@@ -92,3 +92,11 @@ const PokeProfileCollection = () => {
 };
 
 export default PokeProfileCollection;
+
+/**TODO:
+ * - fix search bar. When clicking next, you cannot search though prev pokemon
+ * - style the cards better
+ * - create PokeProfilePage && Link each card with data to that page
+ * - the PokeProfilePage needs a back button to return to the PokeProfileCollection page
+ *
+ * */

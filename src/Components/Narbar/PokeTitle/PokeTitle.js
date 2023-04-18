@@ -11,3 +11,5 @@ const PokeTitle = () => {
 }
 
 export default PokeTitle
+
+// TODO: add home routing to title
