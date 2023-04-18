@@ -1,4 +1,4 @@
-import './PokeTitle.css'
+import './PokeTitle.scss'
 
 const PokeTitle = () => {
     return (

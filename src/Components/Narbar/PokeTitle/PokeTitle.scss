@@ -1,0 +1,48 @@
+.pokeTitle {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-left: 20px;
+  position: relative;
+  bottom: 40px;
+  color: #fdca04;
+  text-shadow: -2px -2px 0 #385ba8, 2px -1px 0 #123872, -1px 2px 0 #11356d, -5px -2px 0 #0b26b9;
+  letter-spacing: -1px;
+  z-index: 2;
+}
+
+.pokeTitleP {
+  font-size: 4rem;
+}
+
+.pokeTitleContainer:hover {
+  transform: translate(2px,2px);
+}
+.pokeTitleContainer:hover .pokeTitleImage {
+  display: block;
+}
+
+
+.pokeTitleImage {
+  background: url("./assets/pokeball.png") no-repeat;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  bottom: 120px;
+  left: 305px;
+  z-index: 1;
+  display: none;
+  animation: pokeJiggle 2s alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pokeJiggle {
+  from {
+    transform: translate(-55%, -55%);
+  }
+  50% {
+    transform: translate(-55%, -57.5%);
+  }
+  to {
+    transform: translate(-55%, -55%);
+  }
+}

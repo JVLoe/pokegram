@@ -84,8 +84,8 @@ $button-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 170px;
-  width: 150px;
+  height: 190px;
+  width: 160px;
   border: 5px ridge #0b0606;
   margin: -15px;
   box-shadow: 0 5px #666;
@@ -111,7 +111,6 @@ $button-size: 1.5rem;
   justify-content: center;
   position: relative;
   top: 30px;
-
   button {
     @include buttonStyle;
     height: 50px;
@@ -119,7 +118,6 @@ $button-size: 1.5rem;
     color: $main-text-color;
     font-size: $button-size;
     margin: 0 20px;
-
     &:active {
       transform: translateY(1px);
     }
@@ -129,8 +127,7 @@ $button-size: 1.5rem;
 .resetPokemonButton {
   position: absolute;
   right: 350px;
-  top: 70px;
-
+  top: 105px;
   button {
     @include buttonStyle;
     font-size: $button-size;

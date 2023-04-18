@@ -60,7 +60,7 @@ const PokeProfileCollection = () => {
                 </div>
 
                 <div className="resetPokemonButton">
-                    <button onClick={handleReset} disabled={offset === 0}>
+                    <button onClick={handleReset}>
                         <FontAwesomeIcon icon={faRotateLeft} style={{color: "#0b26b9",}} />
                     </button>
                 </div>

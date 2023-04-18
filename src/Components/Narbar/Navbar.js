@@ -1,5 +1,5 @@
 import PokeTitle from "./PokeTitle/PokeTitle";
-import './Navbar.css'
+import './Navbar.scss'
 
 const Navbar = () => {
     return (
