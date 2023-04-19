@@ -85,23 +85,41 @@ $button-size: 1.7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 190px;
+  height: 200px;
   width: 160px;
   border: 5px ridge #0b0606;
   margin: -15px;
   box-shadow: 0 5px #666;
   cursor: $click-me-cursor;
+  position: relative;
+}
+
+.pokeInfoContainer {
+  border: solid 1px;
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  bottom: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .avatarName {
   font-size: 1.2rem;
-  position: relative;
-  bottom: 30px;
+  margin: 0 0 -10px 0;
+}
+
+.avatarId {
+  //position: absolute;
+  //top: 100px;
 }
 
 .pokeCard img {
   height: 150px;
   width: 150px;
+  padding-bottom: 10px;
 }
 
 /* navigation buttons */
