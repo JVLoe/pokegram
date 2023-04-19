@@ -1,15 +1,15 @@
-.pokeDirectionContainer {
+.pageNotFound {
   background: #0b0606;
   height: 100vh;
   overflow: hidden;
 }
 
-.pokeDirectionText {
+.pageNotFoundText {
   color: #fa0505;
   font-size: 5rem;
 }
 
-.pokeDirectionButton {
+.pageNotFoundButton {
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -22,24 +22,17 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  font-family: "Play", sans-serif;
+  font-family: 'Play', sans-serif;
   text-transform: uppercase;
-}
-.pokeDirectionButton:hover {
-  background-color: #e3d3d3;
-}
-.pokeDirectionButton:active {
-  background-color: #e3d3d3;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.yes {
-  margin-right: 50px;
+  &:hover {
+    background-color: #e3d3d3
+  }
+  &:active {
+    background-color: #e3d3d3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 }
 
-.no {
-  margin-left: 50px;
-}
 
-/*# sourceMappingURL=PokeDirection.css.map */
+

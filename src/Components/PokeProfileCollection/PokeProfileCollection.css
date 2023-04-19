@@ -24,7 +24,6 @@
   background-color: #fbc904;
   padding: 10px 40px 10px 10px;
 }
-
 .searchInput::placeholder {
   color: #000000;
   font-size: 1rem;
@@ -69,8 +68,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 170px;
-  width: 150px;
+  height: 190px;
+  width: 160px;
   border: 5px ridge #0b0606;
   margin: -15px;
   box-shadow: 0 5px #666;
@@ -103,7 +102,7 @@
   height: 50px;
   width: 50px;
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0 20px;
 }
 .navigationButtons button:active {
@@ -113,13 +112,13 @@
 .resetPokemonButton {
   position: absolute;
   right: 350px;
-  top: 70px;
+  top: 105px;
 }
 .resetPokemonButton button {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .resetPokemonButton button:active {
   transform: rotate(-420deg);

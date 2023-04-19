@@ -44,17 +44,17 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  font-family: "Play", sans-serif;
+  font-family: 'Play', sans-serif;
   text-transform: uppercase;
   z-index: 10;
-}
-.pokeSplashButton:hover {
-  background-color: #000000;
-}
-.pokeSplashButton:active {
-  background-color: #000000;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  &:hover {
+    background-color: #000000
+  }
+  &:active {
+    background-color: #000000;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 }
 
 .piplup {
@@ -76,5 +76,3 @@
   right: 60px;
   z-index: 0;
 }
-
-/*# sourceMappingURL=PokeSplash.css.map */

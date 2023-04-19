@@ -1,6 +1,6 @@
 $main-text-color: #000000;
 $click-me-cursor: pointer;
-$button-size: 1.5rem;
+$button-size: 1.7rem;
 
 
 @mixin buttonStyle {
@@ -35,13 +35,14 @@ $button-size: 1.5rem;
   transition: all .5s ease-in-out;
   background-color: #fbc904;
   padding: 10px 40px 10px 10px;
+  &::placeholder {
+    color: $main-text-color;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
 }
 
-.searchInput::placeholder {
-  color: $main-text-color;
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
+
 
 .btn-search {
   width: 50px;

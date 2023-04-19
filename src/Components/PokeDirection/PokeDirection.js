@@ -1,4 +1,4 @@
-import './PokeDirection.css';
+import './PokeDirection.scss';
 import {useNavigate} from "react-router-dom";
 const PokeDirection = ({handleAuthentication}) => {
     const navigate = useNavigate();
