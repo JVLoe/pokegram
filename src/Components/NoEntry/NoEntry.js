@@ -1,4 +1,4 @@
-import './NoEntry.css'
+import './NoEntry.scss'
 import {useNavigate} from "react-router-dom";
 const NoEntry = () => {
     const navigate = useNavigate();
@@ -12,16 +12,20 @@ const NoEntry = () => {
 
     return (
         <div className="noEntry">
-            <div className="noEntryText">
+            <div className="noEntryImageOne"></div>
+            <div className="noEntryTextContainer">
                 <p>No Entry!</p>
                 <p>Pokégram is a restricted area for Pokémon only! Click <a className="trainergramLink" onClick={handleClickTrainergram}>here</a> to enter Trainergram.</p>
             </div>
-            <button type="button"  onClick={handleClickReset} className="noEntryButton">Reset</button>
-            <div className="noEntryImageContainer">
-                x
-            </div>
+            <div className="noEntryImageTwo"></div>
+            <button type="button"  onClick={handleClickReset} className="resetPathButton">Reset</button>
         </div>
     )
 }
 
 export default NoEntry
+
+/**
+ * TODO:
+ * - style this like the wireframe, with image
+ * */

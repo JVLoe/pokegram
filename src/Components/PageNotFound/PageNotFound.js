@@ -1,4 +1,4 @@
-import './PageNotFound.css'
+import './PageNotFound.scss'
 import {useNavigate} from "react-router-dom";
 const PageNotFound = () => {
     const navigate = useNavigate();
@@ -17,3 +17,8 @@ const PageNotFound = () => {
 }
 
 export default PageNotFound
+
+/**
+ * TODO:
+ * - style this like the wireframe, with images
+ * */

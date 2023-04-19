@@ -1,4 +1,4 @@
-import './PokeSplash.css'
+import './PokeSplash.scss'
 import Navbar from "../Narbar/Navbar";
 import {useNavigate} from "react-router-dom";
 

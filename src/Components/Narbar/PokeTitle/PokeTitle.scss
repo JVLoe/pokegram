@@ -15,12 +15,12 @@
 }
 
 .pokeTitleContainer:hover {
-  transform: translate(2px, 2px);
+  transform: translate(2px,2px);
 }
-
 .pokeTitleContainer:hover .pokeTitleImage {
   display: block;
 }
+
 
 .pokeTitleImage {
   background: url("./assets/pokeball.png") no-repeat;
@@ -46,5 +46,3 @@
     transform: translate(-55%, -55%);
   }
 }
-
-/*# sourceMappingURL=PokeTitle.css.map */

@@ -10,18 +10,18 @@
   top: 22%;
   left: 25%;
   width: 50%;
-}
-.noEntryTextContainer p {
-  color: #fa0505;
-  font-size: 3rem;
-  margin: 0 30px;
-}
-.noEntryTextContainer .trainergramLink {
-  color: #fafafa;
-}
-.noEntryTextContainer .trainergramLink:hover {
-  color: #fa0505;
-  text-shadow: -1px -1px 0 #f6f4f4, 1px -1px 0 #fbf9f9, -1px 1px 0 #ffffff, 1px 2px 0 #f6f4ed;
+  p {
+    color: #fa0505;
+    font-size: 3rem;
+    margin: 0 30px;
+  }
+  .trainergramLink {
+    color: #fafafa;
+    &:hover {
+      color: #fa0505;
+      text-shadow: -1px -1px 0 #f6f4f4, 1px -1px 0 #fbf9f9, -1px 1px 0 #ffffff, 1px 2px 0 #f6f4ed;
+    }
+  }
 }
 
 .noEntryImageOne {
@@ -40,7 +40,6 @@
   position: absolute;
   bottom: 190px;
 }
-
 .resetPathButton {
   position: relative;
   top: 40%;
@@ -55,16 +54,16 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  font-family: "Play", sans-serif;
+  font-family: 'Play', sans-serif;
   text-transform: uppercase;
-}
-.resetPathButton:hover {
-  background-color: #e3d3d3;
-}
-.resetPathButton:active {
-  background-color: #e3d3d3;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  &:hover {
+    background-color: #e3d3d3;
+  }
+  &:active {
+    background-color: #e3d3d3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 }
 
-/*# sourceMappingURL=NoEntry.css.map */
+
