@@ -20,7 +20,7 @@ $button-size: 1.7rem;
 .searchContainer {
   width: fit-content;
   height: fit-content;
-  position: relative;
+  position: absolute;
   top: 90px;
 }
 
@@ -76,7 +76,7 @@ $button-size: 1.7rem;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 150px;
   row-gap: 50px;
-  margin-top: 120px;
+  margin-top: 180px;
   height: 400px;
 }
 
@@ -130,7 +130,7 @@ $button-size: 1.7rem;
   align-items: center;
   justify-content: center;
   position: relative;
-  bottom: -40px;
+  bottom: -30px;
   button {
     @include buttonStyle;
     height: 50px;

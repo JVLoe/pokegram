@@ -175,13 +175,4 @@ export default PokeProfileCollection;
  * - style the cards better
  * - create PokeProfilePage && Link each card with data to that page
  * - the PokeProfilePage needs a back button to return to the PokeProfileCollection page
- *
- *
- *
- *
- * -fetch api of 151 pokemon and store its state (pokemons) - pokemons isnt interfered with
- * - another state to set the displayed pokemon to 6 (the next buttons will basically sift through this) - maybe "dispayedPokemons"
- * - the search will have to use some sort of spread syntax to look through all pokemon
- *
- * - these need to be kept seperate to a degree - using offset with pokemons essentally over-rides the limit i've manually put in the fetch url request
  * */
