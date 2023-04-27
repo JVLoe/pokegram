@@ -6,6 +6,7 @@ import PokeDirection from "./Components/PokeDirection/PokeDirection";
 import PageNotFound from "./Components/PageNotFound/PageNotFound";
 import NoEntry from "./Components/NoEntry/NoEntry";
 import PokeProfileCollection from "./Components/PokeProfileCollection/PokeProfileCollection";
+import PokeProfile from "./Components/PokeProfile/PokeProfile";
 
 const App = () => {
     const [authenticated, setAuthenticated] = useState(false);
@@ -35,7 +36,7 @@ const App = () => {
                         <Route path="/no-entry" element={<Navigate to="/404"/>}/>
                     )} || {
                     authenticated ? (
-                        <Route path="/poke-collection" element={<PokeProfileCollection/>}/>
+                        <Route path="/poke-collection" element={<PokeProfileCollection handleAuthentication={handleAuthentication}/>}/>
                     ) : (
                         <Route path="/poke-collection" element={<Navigate to="/404"/>}/>
                     )
@@ -43,8 +44,14 @@ const App = () => {
 
                     <Route path="/no-entry" element={<NoEntry/>}/>
 
-                    <Route path="/poke-collection" element={<PokeProfileCollection/>}/>
+                    <Route path="/poke-collection" element={<PokeProfileCollection handleAuthentication={handleAuthentication}/>}/>
 
+                    <Route path="/poke-profile" element={<PokeProfile/>}/>
+                    {authenticated ? (
+                        <Route path="/poke-profile" element={<PokeProfile/>}/>
+                    ) : (
+                        <Route path="/poke-profile" element={<Navigate to="/404"/>}/>
+                    )}
                 </Routes>
             </BrowserRouter>
         </div>

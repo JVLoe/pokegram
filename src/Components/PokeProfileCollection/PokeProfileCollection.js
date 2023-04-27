@@ -9,8 +9,9 @@ import {
     faMagnifyingGlass,
     faRotateLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import {useNavigate} from "react-router-dom";
 
-const PokeProfileCollection = () => {
+const PokeProfileCollection = ({ handleAuthentication }) => {
     const [allPokemon, setAllPokemon] = useState([]);
     const [displayedPokemon, setDisplayedPokemon] = useState([]);
     const [searchPokemon, setSearchPokemon] = useState("");
@@ -20,6 +21,7 @@ const PokeProfileCollection = () => {
     const [finalPage, setFinalPage] = useState(false);
 
     const errorMessage = "Something went wrong :(";
+    const navigate = useNavigate();
 
     useEffect(() => {
         async function fetchPokemon() {
@@ -97,13 +99,17 @@ const PokeProfileCollection = () => {
         setDisplayedPokemon(allPokemon.slice(0, 6));
     };
 
+    const handleClick = () => {
+        handleAuthentication();
+        navigate('/poke-profile')
+    }
 
     const displayedPokemonDetails = displayedPokemon.map((pokemon) => {
         const id = pokemon.url.split("/")[6];
         const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
         return (
-            <div key={id} className="pokeCard">
+            <div key={id} className="pokeCard" onClick={handleClick}>
                 <img src={imageUrl} alt={pokemon.name}/>
                 <p className="avatarId">#{id}</p>
                 <p className="avatarName">{pokemon.name}</p>
