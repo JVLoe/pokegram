@@ -120,7 +120,7 @@ const PokeProfileCollection = ({ handleAuthentication }) => {
 
     return (
         <div>
-            <Navbar/>
+            <Navbar showBackButton={false}/>
             <div className="pokeProfileCollectionContainer">
                 <div className="searchContainer">
                     <button className="btn-search">
@@ -176,9 +176,7 @@ const PokeProfileCollection = ({ handleAuthentication }) => {
 };
 export default PokeProfileCollection;
 
-/**TODO:
- * - fix search bar. When clicking next, you cannot search though prev pokemon
+/**TODO
  * - style the cards better
  * - create PokeProfilePage && Link each card with data to that page
- * - the PokeProfilePage needs a back button to return to the PokeProfileCollection page
  * */

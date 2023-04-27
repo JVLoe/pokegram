@@ -10,10 +10,12 @@ import PokeProfile from "./Components/PokeProfile/PokeProfile";
 
 const App = () => {
     const [authenticated, setAuthenticated] = useState(false);
+    const [showBackButton, setShowBackButton] = useState(false);
 
     const handleAuthentication = () => {
         setAuthenticated(true);
     };
+
 
     return (
         <div className="App">
@@ -45,13 +47,14 @@ const App = () => {
                     <Route path="/no-entry" element={<NoEntry/>}/>
 
                     <Route path="/poke-collection" element={<PokeProfileCollection handleAuthentication={handleAuthentication}/>}/>
-
-                    <Route path="/poke-profile" element={<PokeProfile/>}/>
                     {authenticated ? (
-                        <Route path="/poke-profile" element={<PokeProfile/>}/>
+                        <Route path="/poke-profile" element={<PokeProfile />}/>
                     ) : (
                         <Route path="/poke-profile" element={<Navigate to="/404"/>}/>
                     )}
+
+                    <Route path="/poke-profile" element={<PokeProfile />}/>
+
                 </Routes>
             </BrowserRouter>
         </div>

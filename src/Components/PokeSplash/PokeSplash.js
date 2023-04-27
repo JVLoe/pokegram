@@ -11,7 +11,7 @@ const PokeSplash = ({handleAuthentication}) => {
 
     return (
         <div className="pokeSplash">
-            <Navbar/>
+            <Navbar showBackButton={false}/>
             <div className="pokeSplashContainer">
                 <div className="piplup"></div>
                 <div className="wartortle"></div>
