@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router-dom";
 
+
 const PokeProfileCollection = ({ handleAuthentication }) => {
     const [allPokemon, setAllPokemon] = useState([]);
     const [displayedPokemon, setDisplayedPokemon] = useState([]);
@@ -101,7 +102,7 @@ const PokeProfileCollection = ({ handleAuthentication }) => {
 
     const handleClick = () => {
         handleAuthentication();
-        navigate('/poke-profile')
+        navigate('/poke-profile');
     }
 
     const displayedPokemonDetails = displayedPokemon.map((pokemon) => {
